@@ -13,7 +13,8 @@ Welcome to The Cooking Foodie Fiesta website! This project is a static HTML and 
 
 To get started with the project, simply clone the repository to your local machine.
 
-`git clone https://github.com/your-username/cooking-foodie-fiesta.git`
+- Using *HTTPS:* `git clone https://github.com/g19n8812/CODSOFT_Task1.git`
+- Using *SSH:* `git clone git@github.com:g19n8812/CODSOFT_Task2.git`
 
 Open the `index.html` file in your web browser to view the webpage.
 
