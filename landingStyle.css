@@ -1,18 +1,48 @@
 /*set up font from google fonts*/
 @font-face {
     font-family: 'Bungee Spice';
-    src: url('Fonts/BungeeSpice-Regular.ttf') format('truetype'); /* Legacy Browsers */
-  }
+    src: url('Fonts/BungeeSpice-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Aref Ruqaa Ink;
+    src: url('Fonts/ArefRuqaaInk-Bold.ttf') format('truetype');
+}
 
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
+.heading {
+    text-align: center;
+    font-family: 'Aref Ruqaa Ink', sans-serif;
+    color: white;
+    font-size: xx-large;
+
+}
 
 body {
+    background-image: url('images/mockup-photos-5nUNdLueQio-unsplash.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    backdrop-filter: blur(5px); 
+}
+
+/* Ensure compatibility with various browsers */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: inherit;
+    filter: blur(5px);
 }
 
 /* Header styles */
@@ -26,7 +56,7 @@ header {
 }
 
 .logo img {
-    max-height: 100px; /* Adjust the height as needed */
+    max-height: 100px; 
 }
 
 .logo h1 {
@@ -62,6 +92,7 @@ main {
 .right-aside {
     flex: 2;
     padding: 0, 20px;
+    /* background-color: white; */
 }
 
 .left-aside img,
@@ -75,6 +106,7 @@ main {
 .main-bottom-section {
     flex: 2;
     padding: 0 20px;
+    background-color: white;
 }
 
 /*Button styles*/
